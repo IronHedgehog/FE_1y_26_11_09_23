@@ -1,0 +1,31 @@
+/* * = Усі теги на сторінці */
+
+* {
+  background-color: blueviolet;
+}
+
+/* . = атрибут class */
+.text {
+  color: red;
+  background-color: yellowgreen;
+}
+/* # = атрибут ID */
+#id {
+  background-color: aqua;
+}
+
+/* + = Селектор сусіда (тобто наступний елемент) */
+#id + p {
+  background-color: blue;
+  color: yellow;
+}
+
+/* Селектор атрибуту = [] */
+a[href^="http"] {
+  background-color: red;
+}
+a[href^="https"] {
+  background-color: green;
+}
+/* #
+[] */

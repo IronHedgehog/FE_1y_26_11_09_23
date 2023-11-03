@@ -1,0 +1,20 @@
+a[href^="https"] {
+  color: red;
+  font-size: 24px;
+}
+
+div p {
+  font-size: 24px;
+  color: aqua;
+}
+
+ul > li {
+  background-color: aquamarine;
+}
+
+body a {
+  background-color: coral;
+}
+.list + p {
+  font-size: 50px;
+}

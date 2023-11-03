@@ -5,7 +5,7 @@
 }
 
 /* . = атрибут class */
-.text {
+.friend {
   color: red;
   background-color: yellowgreen;
 }
@@ -27,5 +27,3 @@ a[href^="http"] {
 a[href^="https"] {
   background-color: green;
 }
-/* #
-[] */

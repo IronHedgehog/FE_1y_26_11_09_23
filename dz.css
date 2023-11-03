@@ -1,3 +1,8 @@
+:root {
+  --main-text: #000000;
+  --helloween: red;
+}
+
 a[href^="https"] {
   color: red;
   font-size: 24px;
@@ -11,10 +16,20 @@ div p {
 ul > li {
   background-color: aquamarine;
 }
-
+/*  */
 body a {
-  background-color: coral;
+  background-color: #000000;
 }
+
 .list + p {
   font-size: 50px;
+}
+
+/* adja;sjd */
+
+.text {
+  /* color: rgb(255, 100, 0); */
+  /* color: rgba(255, 100, 0, 0.5); */
+  /* variable */
+  color: var(--black);
 }

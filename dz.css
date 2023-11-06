@@ -1,19 +1,26 @@
 :root {
-  --main-text: #000000;
-  --helloween: red;
+  --accent: #2196f3;
+  --main-text: #757575;
+  --headings: #212121;
+}
+
+.pp {
+  color: var(--main-text);
 }
 
 a[href^="https"] {
+  --text: black;
   color: red;
   font-size: 24px;
 }
 
 div p {
   font-size: 24px;
-  color: aqua;
+  color: var(--text);
 }
 
 ul > li {
+  --text: black;
   background-color: aquamarine;
 }
 /*  */
@@ -23,6 +30,7 @@ body a {
 
 .list + p {
   font-size: 50px;
+  color: var(--text);
 }
 
 /* adja;sjd */
@@ -31,5 +39,20 @@ body a {
   /* color: rgb(255, 100, 0); */
   /* color: rgba(255, 100, 0, 0.5); */
   /* variable */
-  color: var(--black);
+
+  color: var(--accent);
 }
+
+/* 212121
+FFFFFF
+757575 */
+
+.pp {
+  color: red;
+}
+
+.pp {
+  color: yellow;
+}
+
+/* якого кольору буде .pp? */

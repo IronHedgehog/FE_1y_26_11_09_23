@@ -7,6 +7,16 @@
   src: url(./fonts/SometypeMono-Medium.ttf) format(ttf);
 }
 
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: grey;
+}
+
+.div {
+  font-family: "Roboto";
+}
+
 .p {
   color: red;
 
@@ -20,12 +30,6 @@
 }
 
 /* font-family: Roboto; 500 */
-
-.p::first-letter {
-  /* font-size = розмір шрифту */
-  font-size: 32px;
-  font-style: italic;
-}
 
 @font-face {
   font-family: "Lobster";
@@ -44,5 +48,85 @@
 /* font-family:Ubuntu, font-weight :300 */
 
 .a {
-  font-family: ;
+  /* font-family: ; */
+}
+
+.text {
+  color: #2196f3;
+
+  /* serif = з зарубками , sans-serif = без зарубок */
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+
+  /* font-style: накреслення шрифта нормальне( значення normal , курсивне або під нахилом(значення italic)) */
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  text-transform: lowercase;
+
+  text-align: end, center, start, left, right;
+  vertical-align: top, middle, bottom;
+
+  /* text-indent = дозволяє зробити абзац */
+  text-indent: 3%;
+  /* white-space: дозволяє переніс або навпаки забороняє */
+  white-space: nowrap;
+}
+
+/* raleway 700 */
+
+ul,
+ol {
+  list-style: none;
+}
+
+.h1 {
+  /* color: #fff; */
+  /* text-align - це властивість для того щоб змінювати положення тексту */
+  text-align: center;
+  /* Font family = підʼєднання сімейства шрифтів */
+  font-family: Roboto;
+  /*  font-size = розмір шрифту*/
+  font-size: 44px;
+  /* font-style: накреслення шрифта нормальне( значення normal ), курсивне або під нахилом(значення italic)) */
+  font-style: normal;
+  /*  font-weight = жирність шрифту*/
+  font-weight: 900;
+  /* line-height = Міжрядковий інтервал (Висота рядка) */
+  line-height: 60px; /* 136.364% */
+  /* letter-spacing = відстань між буквами */
+  letter-spacing: 2.64px;
+
+  /* відступ між словами */
+  word-spacing: 100px;
+
+  /* text-decoration: дозволяє робити декор для тексту */
+  /* text-decoration: line-through; */
+  /*  text-transform = дозволяє трансформувати текст у великі літери(Uppercase) маленькі летери (lowercase) кожне слово з великої літери(capitalize)*/
+  text-transform: capitalize;
+  /* text-shadow: властивість яка дозволяє додати тінь тексту */
+  text-shadow: green 5px 5px;
+
+  color: red;
+  background-color: yellow;
+}
+
+a {
+  /* прибирає підкреслювання в посиланнях */
+  text-decoration: none;
+}
+
+.p::first-letter {
+  /* font-size = розмір шрифту */
+  font-size: 32px;
+  font-style: italic;
+}
+
+/* ::selection - дозволяє працювати з виділенням тексту */
+.h1::selection {
+  background-color: blue;
+  color: yellow;
 }

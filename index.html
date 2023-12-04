@@ -6,7 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./reset.css">
+
+<!-- NORMILIZE TA RESET ЗАПИСУВАТЬ ПЕРЕД ГОЛОВНИМ ФАЙЛОМ З СТИЛЯМИ -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    
 
     <title>Document</title>
   </head>
@@ -16,7 +24,7 @@
       <nav>
         <ul>
           <li>
-            <a href="" class="headertext">HOME</a>
+            <a href="#SERVICES" class="headertext">HOME</a>
           </li>
           <li>
             <a href="" class="headertext">SERVICES</a>
@@ -34,7 +42,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="sectionOne" id="SERVICES">
         <h1>SERVICES</h1>
         <ul>
           <li>
@@ -70,25 +78,25 @@
         <!-- Label - це опис інпута та нашо він створений -->
         <!-- placeholder - допомогає сказати користувачу що вводити в input -->
         <!--    <label for="name">Name </label> ---старий запис -->
-        <div style="width: 400px">
+        <div >
           <label
             >Name
-            <input style="display: block" type="text" placeholder="Name" />
+            <input  type="text" placeholder="Name" />
           </label>
           <label
             >E-mail *
             <input
-              style="display: block"
+           
               type="text"
               placeholder="your e-mail *"
             />
           </label>
           <label
             >Subject
-            <input style="display: block" type="text" placeholder="subject"  required/>
+            <input  type="text" placeholder="subject"  required/>
           </label>
         </div>
-        <textarea cols="30" rows="10" placeholder="Your message *"></textarea> 
+        <textarea  cols="30" rows="10" placeholder="Your message *"></textarea> 
         <button type="submit">SEND MESSAGE</button>
 
         <!-- <p>

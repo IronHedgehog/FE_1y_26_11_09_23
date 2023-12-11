@@ -1,118 +1,37 @@
-/* Slovnik 
- 
+.container {
+  /* width для контейнера =  ширина секції + падінги по бокам для того щоб контент не приліпав до країв сторінки */
 
-таблиця стилів агента користувача  = стилі браузера(треба здихатись)
+  width: 1060px;
+  /* 0 = margin-bottom та margin-top, auto = margin-left та margin-right*/
+  /* auto = відступ від країв нашого сайту буде однаковий зліва та справа */
 
+  /* 0 = відступ зверху та знизу буде = 0 */
 
-кросбраузерність =  дозволяє зробити так,щоб в усіх браузерах все виглядало однаково(техніка однакового відображення і роботи сайту в різних браузерах)
+  /*  margin: 0 auto; = необхідний для центрування контенту*/
 
-normilize = спосіб зробити так щоб всі стилі браузера були однакові в усіх браузрах
+  margin: 0 auto;
 
-reset.css = файлик який повністю онулює стилі браузера,
+  /* 0 = padding-bottom та padding-top  15px = padding-left та padding-right */
 
-
-
-
-Область контенту(контент) = розмір нашого контенту(шо завгодно що ми написали всередені body) який ми створили
-
-padding - внутрішній відступ(Відступ всередені елемента (Відступ між контентом та кордоном елементу(border-oм) (відстань між контентом та гранями блоку
-)))
-
-  border: кордон елементу(елемент між margin-om ta padingom);
-
-margin = зовнішній відступ(Відступ між елементами)
-
-
-
-
-
-
-
-
-  box-sizing = Визначає поведінку браузера а саме те як він буде розраховувати значення блокової моделі;
-
-  border-box = визначає поведінку браузера до нашого елементу(до його блокової моделі) наступним чином: розрахувує width та height  разом з контентом падінгом та бордером(РЕКОМЕНДОВАНЕ ЗНАЧЕННЯ)
-
-  content-box =  width та height розраховує тільки для Області контенту(контенту) 
-
-*/
-
-input {
-  display: block;
+  /* padding: 0 15px; = потрібна для того щоб зробити так щоб наш контент не приліпав до країв екрану тому що так не красиво  */
+  padding: 0 15px;
 }
 
-button {
-  display: inline-block;
+.heading {
+}
+/* margin - завжди прозорий */
+
+.color {
+  /* padding: 94px 0; =внутрішній відступ зверху та знизу 94px, відступ зліва та справа 0*/
+  padding: 94px 0;
+  background-color: #2f303a;
+
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-textarea {
-  resize: none;
-}
-
-.sectionOne {
-  width: 600px;
-  background-color: tomato;
-
-  /* padding-left: 20px;
-  padding-right: 30px;
-  padding-top: 100px;
-  padding-bottom: 200px; */
-
-  /* Загальна властивість padding працює за годинниковою стрілкою  перша цифра =padding-top друге значення = padding-right:   трете значення: padding-bottom ,  четвертре  =  padding-left*/
-  padding: 100px 30px 200px 20px;
-
-  /* Якщо властивості лише дві вказано то перша властивість відповідає за верх та них а друга властивість відповідає за право та ліво */
-  padding: 100px 200px;
-
-  /* Значення для усіх сторін */
-  padding: 20px;
-
-  /* border-width: 5px;
-  border-style: solid;
-  border-color: red; */
-
-  /* - - - - - - - - -  */
-  /*  перше значення ширина кордону друге значення стиль кордону  трете колір кордону*/
-  border: 5px solid green; /* суцільна лінія*/
-  /* border: 5px dashed green; пунктирна лінія */
-
-  /* margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 40px; */
-
-  margin: 10px 40px 20px 30px;
-
-  /* margin = прозорий  у той час як padding кольоровий*/
-  /* margin-bottom: 200px; */
-}
-
-/* .agolden {
-  display: inline-block;
-  padding: 100px;
-} */
-
-.korobka {
-  width: 350px;
-  height: 220px;
-  background-color: tomato;
-
-  /* padding-top: ;
-  padding-bottom: ;
-  padding-left: ;
-  padding-right: ; */
-
-  /* Загальна властивість padding записується по годинниковій стрілці (верхній відступ правий нижній та лівий) */
-  padding: 15px 10px 20px 10px;
-
-  margin-bottom: 30px;
-  /* border = утворюємо кордон */
-  border: 10px solid black;
-  /* border-radius: = закруглення елементу */
-  border-radius: 50%;
-
-  /* border = кордон */
-
-  /* 5px = ширина кордону solid = стиль кордону green колір кодону */
-  /* border: 50px solid green; */
+body {
+  color: white;
 }

@@ -15,6 +15,8 @@
 
   /* padding: 0 15px; = потрібна для того щоб зробити так щоб наш контент не приліпав до країв екрану тому що так не красиво  */
   padding: 0 15px;
+
+  border: 10px dashed red;
 }
 
 .heading {
@@ -26,10 +28,10 @@
   padding: 94px 0;
   background-color: #2f303a;
 
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+  /* background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 body {

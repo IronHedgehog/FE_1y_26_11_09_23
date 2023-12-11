@@ -93,12 +93,26 @@ textarea {
 } */
 
 .korobka {
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 220px;
   background-color: tomato;
+
+  /* padding-top: ;
+  padding-bottom: ;
+  padding-left: ;
+  padding-right: ; */
+
+  /* Загальна властивість padding записується по годинниковій стрілці (верхній відступ правий нижній та лівий) */
+  padding: 15px 10px 20px 10px;
+
+  margin-bottom: 30px;
+  /* border = утворюємо кордон */
+  border: 10px solid black;
+  /* border-radius: = закруглення елементу */
+  border-radius: 50%;
+
   /* border = кордон */
 
   /* 5px = ширина кордону solid = стиль кордону green колір кодону */
-  border: 50px solid green;
-  background-image: url(https://img.freepik.com/free-photo/a-picture-of-fireworks-with-a-road-in-the-background_1340-43363.jpg);
+  /* border: 50px solid green; */
 }

@@ -4,7 +4,7 @@
 таблиця стилів агента користувача  = стилі браузера(треба здихатись)
 
 
-кросбраузерність =  дозволяє зробити так,щоб в усіх браузерах все виглядало однаково
+кросбраузерність =  дозволяє зробити так,щоб в усіх браузерах все виглядало однаково(техніка однакового відображення і роботи сайту в різних браузерах)
 
 normilize = спосіб зробити так щоб всі стилі браузера були однакові в усіх браузрах
 
@@ -85,4 +85,20 @@ textarea {
 
   /* margin = прозорий  у той час як padding кольоровий*/
   /* margin-bottom: 200px; */
+}
+
+/* .agolden {
+  display: inline-block;
+  padding: 100px;
+} */
+
+.korobka {
+  width: 600px;
+  height: 600px;
+  background-color: tomato;
+  /* border = кордон */
+
+  /* 5px = ширина кордону solid = стиль кордону green колір кодону */
+  border: 50px solid green;
+  background-image: url(https://img.freepik.com/free-photo/a-picture-of-fireworks-with-a-road-in-the-background_1340-43363.jpg);
 }

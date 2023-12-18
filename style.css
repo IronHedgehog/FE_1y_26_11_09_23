@@ -22,17 +22,19 @@
 
 .heading {
 }
-/* margin - завжди прозорий */
+/* MARGIN - ЗАВЖДИ ПРОЗОРИЙ(В СТИЛЯХ СЕКЦІЇ НАМ НЕ ПІДХОДИТЬ): */
 
 .color {
   /* padding: 94px 0; =внутрішній відступ зверху та знизу 94px, відступ зліва та справа 0*/
-  padding: 94px 0;
+  /* padding: 94px 0; */
+
+  padding: 56px 0;
   background-color: #2f303a;
 
-  /* background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 body {

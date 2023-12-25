@@ -5,6 +5,71 @@
   box-sizing: border-box;
 }
 
-section {
-  background-color: black;
+ul {
+  list-style: none;
+}
+
+.features {
+  background-color: tomato;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features-list {
+  display: flex;
+  /* row - рядок(основна вісь) стоїть за замовчуванням */
+  flex-direction: row;
+  /* justify-content(Рівняння по ширині) center(по центру) */
+  /* start = ліва частина */
+  /*end = право */
+  /* space-between = однакова відстань між усіма елементами(ростягує на весь екран або на увесь доступний простір) */
+  justify-content: space-between;
+  /* align-items(Рівняння по Висоті) center(по центру) */
+  /* align-items(не вміє працювати з більше ніж одним рядком) */
+  align-items: center;
+  /* align-content(Працює з двома або більше рядками та вирівнює їх по висоті) */
+  align-content: center;
+}
+
+.feature-item {
+  width: 270px;
+}
+/* Not last child = не остання дитина */
+/* Звертання до усіх тегів у яких є клас .features-item окрім(:not) останньої дитини(:last-child) */
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+#abc {
+  background-color: red;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.header-contacts {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-nav {
+  margin-right: 344px;
+}
+
+header li:not(:last-child) {
+  margin-right: 50px;
 }

@@ -4,47 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./reset.css" />
-    <!-- РЕСЕТ ТА НОРМАЛАЙЗ ПЕРЕД ОСНОВНИМИ СТИЛЯМИ -->
+    <!-- БУДЬ ЯКІ РЕСЕТИ АБО НОРМАЛАЙЗИ ЗАПИСУЄМ ДО ГОЛОВНИХ СТИЛЕЙ -->
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- GIT = система контролю версій файлів -->
-    <!-- GITHUB
-    1)Одна з найбільших база данних для зберігання нашого коду
-    2)Зручне зберігання коду (Дуже легко ділитися кодом з іншими)
-
-
-    3)Робота з командними проектами
-    4)Контроль версій файлів
-    5) Створення та використання гілок
-    -->
-    <main>
-      <section>
-        <div>
-          <!-- У нас є батьківський елемент і дитячі елементи(батьківський елемент НАПРИКЛАД UL дитячий НАПРИКЛАД LI). Якщо ви бажаєте щоб дитячі елементи(LI) встали в ряд то ви маєте їх батьківському елементу(UL) дати стиль display:flex-->
-
-          <!-- UL Є БАТЬКІВСЬКИМ ЕЛЕМЕНТОМ УСІХ ЛІШОК В ВИПАДКУ КОЛИ МИ ДАЄМО ЦЬОМУ ЕЛЕМЕНТУ СТИЛЬ DISPLAY FLEX ВІН СТАЄ ТАК НАЗИВАНИМ FLEX_CONTAINEROM І ВСІ ДИТЯЧІ ЕЛЕМЕНТИ ВСТАЮТЬ В РЯДОК-->
-          <ul class="list">
-            <!--КОЛИ БАТЬКІВСЬКИЙ ЕЛЕМЕНТ МАЄ СТИЛЬ DISPLAY FLEX УСІ ЛІШКИ(ДИТЯЧІ ЕЛЕМЕНТИ )СТАНУТЬ В РЯДОК (flex-items)-->
-            <li class="list-item"><a href="">фівфів</a></li>
-            <li class="list-item"><a href="">фів</a></li>
-            <li class="list-item"><a href="">фів</a></li>
-            <li class="list-item"><a href="">фів</a></li>
-            <li class="list-item last-li"><a href="">фів</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!-- 
-     
-      Flex-box
-       складається з flex-контейнера (flex-container) - батьківського контейнера 
-       та гнучких елементів (flex items) — дочірніх блоків.
-
-       2)FLEX-BOX ставить елементи в рядок
-       3) FLexBox = Дозволить нам змінювати позиціонування елементів на сторінці
-
-     -->
+    <!-- Щоб поставити дитячі елементи в рядок (в данному випадку то є лішки li.list-item )ми маємо застосувати до батьківського елемента(ul.list) display:flex -->
+    <!-- <div class="container"> -->
+    <ul class="list">
+      <li class="list-item">
+        <h3 class="heading">1</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+      <li class="list-item">
+        <h3 class="heading">2</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+      <li class="list-item">
+        <h3 class="heading">3</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+      <li class="list-item">
+        <h3 class="heading">4</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+      <li class="list-item">
+        <h3 class="heading">5</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+      <li class="list-item">
+        <h3 class="heading">6</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </li>
+    </ul>
+    <!-- </div> -->
   </body>
 </html>

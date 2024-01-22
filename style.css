@@ -8,6 +8,10 @@
 img {
   display: block;
 }
+/* Для  того щоб співпрацювати з rem-ами має буть обов'язково  */
+html {
+  font-size: 14px;
+}
 
 .test {
   /* background-color - фоновий колір */
@@ -30,7 +34,127 @@ img {
 /* display:flex - кожній ul */
 /* display:flex - треба давати батьківському елементу для тих елементів які ви хочете поставити в рядок */
 .list {
+  list-style: none;
   display: flex;
   /* Властивість яка вирівняє елементи по ширині */
   justify-content: center;
+}
+/* Абсолютні одиниці - абсолютні(не від кого не залежать) */
+.text {
+  width: 500px;
+  font-size: 24px;
+}
+/*  Відносні одиниці - відносні(відносяться до розміру батьківського елемента)*/
+/* Давати висоту остання справа - висоту має формувати контент */
+.section {
+  width: 1000px;
+  height: 800px;
+
+  /* font-size: 20px; */
+  background-color: green;
+}
+
+/* Чому тут працює висота а у минолому прикладі ні? */
+/* у діва є батьківський елемент з фіксованою висотою та шириною йому є відносно чого рахувати відсотки */
+
+/* % -  Відносні одиниці - відносяться до батьківського елементу, якщо нема батьківського елементу з зафіксованими розмірами то розрахунок ширини буде відбуватиьс відносно сторінки а висота розраховуватись взагалі не буде*/
+/* Скоріш за все будемо використовувати в адаптації нашого сайту */
+.div {
+  width: 100%;
+  height: 50%;
+  background-color: brown;
+}
+.text {
+  width: 500px;
+  /* fz - має початкове значення 100% і вже від нього можна відштовхуватись */
+  font-size: 150%;
+}
+
+.txt {
+  /* em- відносна одиниця яка відноситься до значення батьківскього елемента і розраховує значення відносно  значення батьківського лементу */
+  /* em бачить що на батьківському елементі fz = 40 і робить його вдвічі білльшим на цьому елементі */
+  /* На батьківському fz = 20 */
+  /* чому в такому випадку = 1em = 20 */
+  /* font-size: 1em; */
+  /* rem спирається на стилі тегу html */
+  /* fz на тезі html 14  */
+  /* якщо fz = 2rem то я беру значення html (14) і множу його на 2 = 14 * 2 = 28px */
+  font-size: 2rem;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-item::after {
+  /*  */
+  /* псевдоелемент ::after дозволяє нам утворювати якийсь контент після нашогоелементу на якому ми утворюємо after  */
+  /* content: ""; - має бути обовʼязково в таких псевдоелементах як ::after та ::before */
+  /* ""- пуста строка */
+  /* ::after та ::before за замовчуванням рядкові елементи 
+  до них не можна використати висоту та ширину */
+  /* Якщо ви хочете задати висоту та ширину треба зробити елемент блочним за допомгою  display: block; */
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 10px;
+  height: 10px;
+
+  margin-top: 20px;
+  background-color: tomato;
+}
+
+.list-item::before {
+  /* content є обовʼязковим для існування псевдоелементів таких як ::before ::after */
+  content: "";
+  display: block;
+  /* 1em - ? */
+  /* 2rem - ? */
+  width: 100%;
+  height: 10px;
+  background-color: green;
+}
+
+.text::selection {
+  /*::selection - відпрацьовує при виділенні тексту для обробки кольору виділення та кольору тексту при виділенні  */
+  background-color: blue;
+  color: yellow;
+}
+
+/* ::first-line - дозволяє декорувати перший рядок*/
+.text::first-line {
+  font-size: 20px;
+  /* background-color: blue; */
+}
+/* ::first-line - дозволяє декорувати першу букву*/
+.text::first-letter {
+  color: brown;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.text {
+  width: 1000px;
+  height: 500px;
+  /* background-color - колір фону */
+  background-color: darkslategray;
+
+  /*background-image при встановленні двух або більше картинок стає важливим їх черга  */
+  /* перший елемент буде першим в черзі і його ви ї будете бачити без додаткових налаштувань */
+
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg),
+    url(https://images.prom.ua/1065621053_w640_h640_vafelnaya-kartinka-lyubov.jpg),
+    url(https://img.freepik.com/free-photo/rainbow-oil-drops-on-a-water-surface-abstract-background_23-2148290071.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705795200&semt=ais);
+  /* background-position: визначає місце положення нашого фонового зображення  має пʼять ключових слів згідно яких ми можемо переміщувати елемент*/
+  /* Можемо встановити вручну, первше значення ширина друге висота */
+  background-position: 50% 50%, right, center;
+  /* background-size визначає розмір фонового зображення перше число означає ширину друге висоту */
+  /* cover - зберігає пропорції зображення, розтягує зображення на весь екран */
+  /* contain -  зберігає пропорції зображення,задає максимальні розміри картинці */
+  background-size: 500px 200px, contain, cover;
+  /*  background-repeat - працює з повторенням фонового зображення(якщо є зайве мічце зображення повторюється) за допомогою background-repeat ми можемо це заборонити або налаштувати*/
+  background-repeat: no-repeat;
+  /* background: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg)
+    no-repeat; */
 }

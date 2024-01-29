@@ -53,3 +53,49 @@
 .astronaut::before {
   background-image: url(./img/about/astronaut.webp);
 }
+
+.ul {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.radial {
+  width: 500px;
+  height: 500px;
+  background: rgb(147, 135, 182);
+  background: radial-gradient(
+    circle,
+    rgba(147, 135, 182, 0.8562018557422969) 24%,
+    rgba(45, 21, 194, 1) 58%,
+    rgba(46, 235, 0, 0.5844931722689075) 69%
+  );
+}
+
+.shadow {
+  width: 500px;
+  height: 500px;
+  -webkit-box-shadow: 26px 32px 99px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 26px 32px 99px 4px rgba(0, 0, 0, 0.75);
+  /*  box-shadow дозволяє створювати тінь */
+  /* перше число -  Horizontal Length -  на скільки елемент має зрушитись по горизонталі(зліва-направо)
+ */
+
+  /*2) Vertical Length - на скільки рухатись зверху вниз */
+  /* нижчне не обовʼязкові властивості */
+  /*3)  Blur Radius - розмиття тіні*/
+  /*4) Spread Radius - розширення тіні */
+  /*  колір тіні - обовʼязкова властивість  */
+  box-shadow: 26px 0px rgba(255, 0, 0, 0.75);
+}

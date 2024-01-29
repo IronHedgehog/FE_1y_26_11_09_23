@@ -1,99 +1,55 @@
-/* reset.css = скинути стилі браузера щоб він нам не заважав(прибирає зайві маркування, підкреслення, відступи) */
+.bg-box {
+  width: 800px;
+  height: 800px;
+  background-color: green;
 
-/* * =  усі теги на сторінці */
-/* Box-sizing рекомендоване значення = border-box */
-* {
-  /*  зовнішній відступ  */
-  margin: 0;
-  /* внутрішній відступ */
-  padding: 0;
-  /* Кордон елементу */
-  border: 0;
-  /* поведінка браузера при рахуванні ширини та висоти елементу АБСОЛЮТНО ЗАВЖДИ МАЄ МІСТИТИ ОДНЕ РЕКОМЕНДОВАНЕ ЗНАЧЕННЯ border-box (За замовчуванням стоїть content-box)*/
-  box-sizing: border-box;
-}
-
-a {
-  /* прибирання підкреслення */
-  text-decoration: none;
-}
-
-ul,
-ol {
-  /* прибирання поміток перед списками */
-  list-style: none;
-}
-
-img {
-  /* файні картинки */
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-body {
-  scroll-behavior: smooth;
+  background-image: url(./house.jpg), url(./lamp.webp), url(./hedgehog.webp),
+    url(./ponchik.webp), url(./grass.webp);
+  background-repeat: no-repeat, repeat-y, repeat-y, repeat-x, no-repeat;
+  background-position: center, left, right, top, bottom;
+  background-size: auto, 5% 5%, 5% 5%, 10% 10%, 100% 50%;
 }
 
 .list {
-  /* width: 1000px;
-  height: 1000px; */
-  /* background-image встановлює картинку заднього фону */
-  /* background-image: url(./imgs/images.jpeg); */
-  /* background-repeat: властивість яка забороняє картинці повторюватись */
+  display: flex;
+  justify-content: center;
+}
+.list-item {
+  width: 270px;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ::before ::after - суто декоративні */
+.list-item::before {
+  /* Щоб зʼявився befora або after елемент обовʼязково має буть  content: "";  */
+  content: "";
+  /* За замовчуваннями befora та after рядкові, якщо ми хочемо кастомну ширину та висоту даємо display: block;*/
+  display: block;
+
+  width: 270px;
+  height: 120px;
+
+  border-radius: 4px;
+  background-color: #f5f4fa;
+
   background-repeat: no-repeat;
-  /* size - розмір */
-  background-size: contain;
-  /* position - позиція */
   background-position: center;
 }
 
-/* Щоб поставити елементи в рядок ми маємо застосувати властивість display:flex */
-/* до якого елементу? До батьківського елементу, всі дитячі елементи стають в рядок */
-
-.adventures-list {
-  display: flex;
-  /* вирівнювання елементів по ширині */
-  justify-content: center;
-  /* вирівнювання елементів по висоті */
-  align-items: center;
-  flex-wrap: wrap;
+.antena::before {
+  background-image: url(./img/about/antenna.webp);
 }
 
-.adventures-item {
-  /* display: flex; */
-  width: 280px;
+.clock::before {
+  background-image: url(./img/about/clock.webp);
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.diagram::before {
+  background-image: url(./img/about/diagram.webp);
 }
-
-/* властивості flex елементів */
-
-/* grid gap*/
-
-.list {
-  display: grid;
-  justify-items: center;
-
-  /* template - плита - шаблон */
-  /* columns = колона */
-  /* fr = відносна одиниця яка  */
-  /* grid-template-columns: 100px 200px 300px; */
-  /*  repeat(3, 1fr) = повтори 3 колонки з однаковим розміром */
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-
-  row-gap: 30px;
-  column-gap: 20px;
-}
-
-.list-item {
-  width: 250px;
-  height: 350px;
-  background-color: black;
-  border-radius: 15px;
+.astronaut::before {
+  background-image: url(./img/about/astronaut.webp);
 }

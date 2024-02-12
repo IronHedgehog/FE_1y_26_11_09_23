@@ -220,3 +220,15 @@ a {
   /* Light text */
   color: #ffffff;
 }
+
+.button-appstore:hover {
+  background-color: #fa4a0c;
+  border: none;
+  cursor: pointer;
+}
+
+.button-playstore:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}

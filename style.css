@@ -65,3 +65,158 @@ a {
   color: #fa4a0c;
   cursor: pointer;
 }
+
+.how-works-heading {
+  /* How the app works */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 36px;
+  /* identical to box height, or 82% */
+  letter-spacing: 0.1px;
+
+  color: #000000;
+
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 103px;
+}
+
+.how-works-heading:hover {
+  color: tomato;
+  font-size: 50px;
+}
+
+.how-works-list {
+  /* display: flex; */
+  /* nowrap- перенос на наступний рядок заборонено */
+  /* wrap- перенос на наступний рядок дозволено */
+  flex-wrap: wrap;
+}
+
+.how-works-item {
+  display: flex;
+  align-items: center;
+}
+
+/*  */
+.reverse {
+  /*  flex-direction: - яка дозволяє нам змінити напрямок рядка */
+  flex-direction: row-reverse;
+}
+
+.how-works-item:first-child {
+  margin-bottom: 108px;
+}
+
+.text-container {
+  margin-left: 287px;
+}
+.text-container-reverse {
+  margin-right: 287px;
+}
+/* ---------------------------ORDER---------------- */
+
+.order {
+  padding-top: 140px;
+  padding-bottom: 130px;
+  background-image: url(./img/bcg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.order-heading {
+  /* Order now. */
+
+  /* H2 */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  /* identical to box height, or 142% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* Light text */
+  color: #ffffff;
+
+  margin-bottom: 10px;
+}
+
+.order-text {
+  /* Available on your favorite store. Start your premium experience now */
+
+  /* H4 */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  /* identical to box height, or 158% */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #ffffff;
+
+  margin-bottom: 50px;
+}
+
+.button-playstore {
+  padding: 18px 31px;
+
+  width: 142px;
+  height: 64px;
+
+  background-color: #fa4a0c;
+  border-radius: 10px;
+
+  /* Auto layout */
+
+  /* Button */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  letter-spacing: 0.2px;
+
+  /* Light text */
+  color: #ffffff;
+
+  margin-right: 15px;
+}
+
+.order-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-appstore {
+  padding: 16px 45px;
+  background-color: transparent;
+
+  width: 173px;
+  height: 60px;
+
+  /* Light background */
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  /* Button */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  letter-spacing: 0.2px;
+
+  /* Light text */
+  color: #ffffff;
+}

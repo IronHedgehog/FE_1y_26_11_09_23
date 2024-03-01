@@ -3,56 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <section class="how-works">
-        <div class="container">
-          <h2 class="how-works-heading">How the app works</h2>
-          <ul class="how-works-list">
-            <li class="how-works-item">
-              <img class="" src="./img/login.webp" alt="" />
-              <div class="text-container">
-                <p class="how-works-underheading">Create an account</p>
+    <!-- margin - зовнішній відступ -->
+    <!-- reset - Скидає усі стилі браузеру -->
+    <!-- 1) Сформувати логічні блоки -->
+    <!-- 2) більш зручне стилювання -->
+    <!-- 3)  -->
+    <header style="position: fixed; top: 0; left: 0">
+      <!-- header > a -->
+      <a href="">logo</a>
+      <nav>
+        <!-- d-flex -->
+        <ul style="display: flex">
+          <li class="li">1</li>
+          <li class="li">2</li>
+          <li class="li">3</li>
+          <li class="li">4</li>
+          <li class="li">5</li>
+          <li class="li">6</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="test-div"></div>
+    </div>
+    <!-- form - початок блоку опитування користувача(створення форми) -->
+    <form>
+      <!-- label - семантична обгорточка яка має функціонал при натисканні на текст цього лейблу фокусуватись на вкладеному в лейбл інпуті -->
+      <label>
+        E-mail
+        <!--placeholder - атрибут підказка, який дозволяє дати підказку користувачу -->
+        <input placeholder="емейл" type="email" name="" />
+      </label>
+      <button type="submit">Замовити</button>
+    </form>
 
-                <h3 class="how-works-item-heading">
-                  Create/login to an existing account to get started
-                </h3>
-                <p class="how-works-text">
-                  An account is created with your email and a desired password
-                </p>
-              </div>
-            </li>
-            <li class="how-works-item reverse">
-              <img src="./img/food.webp" alt="" />
-              <div class="text-container-reverse">
-                <p class="how-works-underheading">Explore varieties</p>
-                <h3 class="how-works-item-heading">
-                  Shop for your favorites meal as e dey hot.
-                </h3>
-                <p class="how-works-text">
-                  Shop for your favorite meals or drinks and enjoy while doing
-                  it.
-                </p>
-              </div>
-            </li>
-          </ul>
+    <section>
+      <div class="container">
+        <div>
+          <div class="hero-left"></div>
+          <div class="hero-right"></div>
         </div>
-      </section>
-      <section class="order">
-        <div class="container">
-          <h2 class="order-heading">Order now.</h2>
-          <p class="order-text">
-            Available on your favorite store. Start your premium experience now
-          </p>
-          <div class="order-button-container">
-            <button class="button-playstore">Playstore</button>
-            <button class="button-appstore">App store</button>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <ul class="ul">
+      <li class="list-item">1</li>
+      <li class="list-item">2</li>
+      <li class="list-item">3</li>
+      <li class="list-item">4</li>
+      <li class="list-item">5</li>
+      <li class="list-item">
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+          quae obcaecati numquam amet maxime consequatur suscipit. Ratione illo,
+          a quia blanditiis architecto fuga perspiciatis aut quod hic nam alias
+          cum.
+        </p>
+      </li>
+    </ul>
   </body>
 </html>

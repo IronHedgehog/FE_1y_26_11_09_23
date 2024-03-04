@@ -3,73 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>ColoRave</title>
   </head>
   <body>
-    <!-- margin - зовнішній відступ -->
-    <!-- reset - Скидає усі стилі браузеру -->
-    <!-- 1) Сформувати логічні блоки -->
-    <!-- 2) більш зручне стилювання -->
-    <!-- 3)  -->
-    <header style="position: fixed; top: 0; left: 0">
-      <!-- header > a -->
-      <a href="">logo</a>
-      <nav>
-        <!-- d-flex -->
-        <ul style="display: flex">
-          <li class="li">1</li>
-          <li class="li">2</li>
-          <li class="li">3</li>
-          <li class="li">4</li>
-          <li class="li">5</li>
-          <li class="li">6</li>
+    <!-- шапка -->
+    <header class="header">
+      <div class="container header">
+        <!-- лого -->
+        <a class="logo" href="">
+          <img class="logo-img" src="./img/header/logo.webp" alt="" />
+        </a>
+        <!-- навігація -->
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link active">Main page</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Advantages</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item nav-item--margin">
+              <a href="" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Order</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Перемикач мов -->
+        <ul class="languages">
+          <li class="languages-items nav-item">
+            <a href="" class="languages-link">UA</a>
+          </li>
+          <li class="languages-items nav-item">
+            <a href="" class="languages-link active">ENG</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <div class="wrapper">
-      <div class="test-div"></div>
-    </div>
-    <!-- form - початок блоку опитування користувача(створення форми) -->
-    <form>
-      <!-- label - семантична обгорточка яка має функціонал при натисканні на текст цього лейблу фокусуватись на вкладеному в лейбл інпуті -->
-      <label>
-        E-mail
-        <!--placeholder - атрибут підказка, який дозволяє дати підказку користувачу -->
-        <input placeholder="емейл" type="email" name="" />
-      </label>
-      <button type="submit">Замовити</button>
-    </form>
-
-    <section>
-      <div class="container">
-        <div>
-          <div class="hero-left"></div>
-          <div class="hero-right"></div>
-        </div>
       </div>
-    </section>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="hero-text">
+            On this site you can find custom Nike sneakers of your dreams. The
+            original company caт`t create such beautiful </br> sneakers as we do.</br>  Good
+            luck finding your way in the world of custom sneakers.
+          </p>
 
-    <ul class="ul">
-      <li class="list-item">1</li>
-      <li class="list-item">2</li>
-      <li class="list-item">3</li>
-      <li class="list-item">4</li>
-      <li class="list-item">5</li>
-      <li class="list-item">
-        <p class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-          quae obcaecati numquam amet maxime consequatur suscipit. Ratione illo,
-          a quia blanditiis architecto fuga perspiciatis aut quod hic nam alias
-          cum.
-        </p>
-      </li>
-    </ul>
+          <a class="ua" href="./ua.html">Buy my Nike</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+<ul class="advantages-list">
+  <li class="advantages-item">
+    <p class="advantages-text">Premium
+Quality</p>
+    <img src="./img/stars.png" alt="" class="advantages-img">
+  </li>
+  <li class="advantages-item">
+    <img src="./img/stars.png" alt="" class="advantages-img">
+    <p class="advantages-text">Indelible 
+paint</p>
+  </li>
+  <li class="advantages-item">
+    <p class="advantages-text">Fast 
+shipping</p>
+    <img src="./img/stars.png" alt="" class="advantages-img">
+  </li>
+</ul>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+    <footer>
+      <div class="container">
+        <div class="footer-suport">
+      <ul class="support-list">
+        <li class="support-item">
+          <p class="support-text">Have a question?</p>
+        </li>
+        <li class="support-item">
+          <p class="support-text">Have a proposal for cooperation?</p>
+        </li>
+        <li class="support-item">
+          <p class="support-text">Advertising questions?</p>
+        </li>
+      </ul>
+
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a href="" class="contacts-link">ColoRawe_support@gmail.com</a>
+        </li>
+        <li class="contacts-item">
+          <a href="" class="contacts-link">ColoRawe_Cooperation@gmail.com</a>
+        </li>
+        <li class="contacts-item">
+          <a href="" class="contacts-link">ColoRawe_Advertising@gmail.com</a>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

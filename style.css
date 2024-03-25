@@ -14,145 +14,41 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.header {
-  padding-top: 16px;
-  padding-bottom: 14px;
-  display: flex;
-  background: rgb(1, 45, 99);
-}
-
-.logo {
-  margin-right: 152px;
-}
-
-.header-nav {
-  margin-right: 73px;
-  display: flex;
-  /*align-items: - рівняння елементів по висоті  */
-  align-items: center;
-}
-
-.nav-list {
+body {
+  /* background-color: black; */
+  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.nav-item:not(:last-child) {
-  margin-right: 29px;
+img {
+  width: 2000px;
 }
 
-.nav-item--margin {
-  margin-right: 20px !important;
-}
-.nav-link {
-  color: rgb(199, 199, 199);
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
+.oldsvg {
+  fill: red;
+  color: red;
+  /* background-color: red; */
 }
 
-.languages {
-  display: flex;
-  align-items: center;
+.svg {
+  /* fill - колір svg зображення */
+  fill: gold;
+  /* stroke - колір контурів */
+  /* stroke: black; */
 }
 
-.languages-link {
-  color: #dcdcdc;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
-}
+svg {
+  /* width: 20px;
+  height: 20px; */
+  fill: aqua;
+  /*fill-opacity - прозорість кольору  */
+  fill-opacity: 0.5;
 
-.active {
-  color: rgb(255, 255, 255);
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-}
-/* HERO */
-
-.hero-text {
-  width: 508px;
-
-  /* color: rgb(255, 255, 255); */
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.ua {
-  display: block;
-  width: 254px;
-  padding: 20px 61px;
-  border-radius: 10px;
-  background: rgb(142, 50, 198);
-
-  /* текст */
-
-  color: rgb(255, 255, 255);
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.footer-suport {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20.5px;
-  border-bottom: 1px solid rgb(155, 155, 155);
-}
-
-.advantages {
-  padding: 105px 0;
-  background-image: url(./img/group.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 25px 0;
-
-  border: 5px solid rgb(142, 50, 198);
-}
-
-.advantages-item {
-  padding: 0 95px;
-}
-
-.advantages-item:first-child {
-  padding: 0 50px;
-  border-right: 1px solid rgb(255, 255, 255);
-}
-.advantages-item:last-child {
-  padding: 0 50px;
-  border-left: 1px solid rgb(255, 255, 255);
-}
-
-.advantages-text {
-  color: rgb(255, 255, 255);
-  font-family: Playfair Display;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: center;
-}
-
-.advantages-img {
-  width: 240px;
-  height: 240px;
+  stroke: black;
+  /*  stroke-width - за замовчуванням 1px, ширина контурів */
+  stroke-width: 0.5px;
+  /* прозорість контурів */
+  stroke-opacity: 0.5;
 }

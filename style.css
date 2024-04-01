@@ -15,6 +15,8 @@ a {
 }
 
 body {
+  /* background-image: url(./old.svg); */
+
   /* background-color: black; */
   height: 100vh;
   display: flex;
@@ -22,24 +24,24 @@ body {
   justify-content: center;
 }
 
-img {
+/* img {
   width: 2000px;
-}
+} */
 
 .oldsvg {
-  fill: red;
-  color: red;
+  /* fill: red;
+  color: red; */
   /* background-color: red; */
 }
 
 .svg {
   /* fill - колір svg зображення */
-  fill: gold;
+  /* fill: gold; */
   /* stroke - колір контурів */
   /* stroke: black; */
 }
 
-svg {
+.svg {
   /* width: 20px;
   height: 20px; */
   fill: aqua;
@@ -51,4 +53,20 @@ svg {
   stroke-width: 0.5px;
   /* прозорість контурів */
   stroke-opacity: 0.5;
+}
+
+.img {
+  fill: red;
+}
+
+.icon {
+  /* Всі властивості шрифту які ви знаєте можна застосувати при стилюванні іконочного шрифту */
+  color: red;
+
+  font-size: 50px;
+}
+
+.fa-x-twitter {
+  font-size: 50px;
+  color: red;
 }

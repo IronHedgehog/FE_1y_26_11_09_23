@@ -3,97 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ecf131a3d2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- ТАК РОБИТИ НЕМОЖНА -->
-    <!-- jpg png webP - растова графіка  -->
-    <!-- <img src="./Object.jpg" alt="" />
-    <img src="./Object.png" alt="" />
-    <img src="./JPGNew.webp" alt="" />
-    <img src="./pngWebP.webp" alt="" />
-    <img src="./img.svg" alt="" />
-    <img class="oldsvg" src="./old.svg" alt="" />
-    <img src="./new.svg" alt="" /> -->
-    <!-- ТАК РОБИТИ МОЖНА -->
-    <!-- щоб стилювати svg,нам потрібно давати клас саме тегу svg -->
-    <!-- svg + use -працюють добре тільки з спрайтами -->
-    <!-- з img - ми не можемо змінювати кольори -->
-    <!-- <img class="svg" src="./car.svg" alt="" /> -->
+    <!-- якщо ви хочете спозиціонувати один елемент відносно іншого то батьківському тегу ви даєте position relateve а дитячому absolute -->
+    <!-- <div class="red">div 1</div> -->
+    <!-- relative -->
+    <!-- <div class="green"> -->
+    <!-- absolute -->
+    <!-- <div class="div">asd</div>
+    </div>
+    <div class="yellow">div 3</div>
+    <div class="orange">div 4</div> -->
 
-    <!-- для того щоб побачити svg зображення необхідна комбінація 
-    1)Шлях до спрайту
-  2)Поставити селектор id (#)
-  3)id необхідного вам зображення(його можна знайте у тезі symbol)
-  -->
-
-    <ul>
-      <li>
-        <svg class="svg">
-          <use href="./social.svg#icon-instagram"></use>
-        </svg>
-      </li>
-      <li>
-        <svg class="svg">
-          <use href="./social.svg#icon-Vector"></use>
-        </svg>
-      </li>
-      <li>
-        <svg class="svg">
-          <use href="./social.svg#icon-facebook"></use>
-        </svg>
-      </li>
-      <li>
-        <svg class="svg">
-          <use href="./social.svg#icon-linkedin"></use>
-        </svg>
-      </li>
-    </ul>
-
-    <!-- 1) щоб приєднати шрифт треба підʼєднати стилі які ми отримали при генерації шрифту-->
-    <!-- 2) Створити тег i -->
-    <!-- 2) у тезі i додати базовий клас(icon) -->
-    <ul>
-      <li><i class="fa-brands fa-x-twitter"></i></li>
-      <li><i class="icon icon-linkedin"></i></li>
-      <li><i class="icon icon-facebook"></i></li>
-      <li><i class="icon icon-instagram"></i></li>
-      <li><i class="icon icon-X"></i></li>
-      <li><i class="icon icon-X"></i></li>
-      <li><i class="icon icon-X"></i></li>
-      <li><i class="icon icon-X"></i></li>
-    </ul>
-
-    <svg class="svg">
-      <use href="./symbol-defs.svg#antena"></use>
-    </svg>
-    <svg class="svg">
-      <use href="./symbol-defs.svg#antena"></use>
-    </svg>
-    <svg class="svg">
-      <use href="./symbol-defs.svg#antena"></use>
-    </svg>
-    <svg class="svg">
-      <use href="./symbol-defs.svg#antena"></use>
-    </svg>
-
-    <!-- <svg>
-      <use href="./symbol-defs.svg#antena"></use>
-    </svg>
-    <svg>
-      <use href="./symbol-defs.svg#astronaut"></use>
-    </svg>
-    <svg>
-      <use href="./symbol-defs.svg#clock"></use>
-    </svg>
-    <svg>
-      <use href="./symbol-defs.svg#diagrama"></use>
-    </svg> -->
+    <div class="alfa"></div>
+    <div class="betta"></div>
+    <div class="gamma"></div>
   </body>
 </html>

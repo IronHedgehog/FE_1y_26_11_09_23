@@ -14,59 +14,98 @@ a {
   text-decoration: none;
 }
 
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* Значення за замовчуванням */
+  /* Стоїть position static  ви не можете рухати його за допомгою властивостей top left right bottom */
+  /* absolute -основний  - видаляє елемент з потоку сторінки та дозволія перенести його туди куди вам зручно*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* top: 1000px;
+  left: 100px; */
+}
+
+/* відпрацювала комбінація relative + absolute */
+/* Усі вкладені елементи то незалежно від того який в них позішн цей елемент буде відраховувати всі значення відносно батківського  */
+.green {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  /* Основний - він елемент не видаляє з основного потоку сторінки(місце на сайті за елементом залишається але він може в будь-який піти по своїм справам за допомогою властивостей top right left bottom ) */
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.yellow {
+  /* vh - viewport height */
+  width: 100vh;
+  /* vw - viewport wight */
+  height: 100vw;
+  background-color: yellow;
+  /* z-index: 10; */
+  /* position: static; */
+}
+
+.orange {
+  width: 200px;
+  height: 200px;
+
+  /* z-index - властивість яка дозволяє нам приховувати або виявляти предмети на ось z(індекс глибини)  якщо даєте - значення більше то ваш елемент буде проявлено або значення менше за інші елементи то ваш елемент буде приховано*/
+  z-index: 20;
+
+  position: fixed;
+  /* центрування на екрані */
+  top: 50%;
+  left: 50%;
+  background-color: orange;
+
+  /* transform - властивість яка дозволяє трансформувати ваш елемент або переміщувати його в просторі */
+  transform: translate(-50%, -50%);
+}
+
 body {
-  /* background-image: url(./old.svg); */
-
-  /* background-color: black; */
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* height: 10000px; */
 }
 
-/* img {
-  width: 2000px;
-} */
-
-.oldsvg {
-  /* fill: red;
-  color: red; */
-  /* background-color: red; */
+.alfa {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 11;
 }
 
-.svg {
-  /* fill - колір svg зображення */
-  /* fill: gold; */
-  /* stroke - колір контурів */
-  /* stroke: black; */
+.betta {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 10;
 }
 
-.svg {
-  /* width: 20px;
-  height: 20px; */
-  fill: aqua;
-  /*fill-opacity - прозорість кольору  */
-  fill-opacity: 0.5;
-
-  stroke: black;
-  /*  stroke-width - за замовчуванням 1px, ширина контурів */
-  stroke-width: 0.5px;
-  /* прозорість контурів */
-  stroke-opacity: 0.5;
-}
-
-.img {
-  fill: red;
-}
-
-.icon {
-  /* Всі властивості шрифту які ви знаєте можна застосувати при стилюванні іконочного шрифту */
-  color: red;
-
-  font-size: 50px;
-}
-
-.fa-x-twitter {
-  font-size: 50px;
-  color: red;
+.gamma {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 70px;
+  left: 150px;
 }

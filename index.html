@@ -231,6 +231,22 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close>X</button>
+        <form action="">
+          <input type="text" minlength="2" maxlength="50" />
+          <input type="number" min="18" max="60" />
+          <input type="checkbox" />
+
+          <input
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <input type="password" />
+          <input type="tel" />
+          <!--  -->
+          <textarea id="my-textarea" class="text" name="" rows="10"></textarea>
+
+          <button disabled type="submit">Відправити форму</button>
+        </form>
       </div>
     </div>
 

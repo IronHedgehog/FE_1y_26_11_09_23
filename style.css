@@ -46,5 +46,19 @@ a {
 
   width: 528px;
   height: 561px;
-  background-color: white;
+  background-color: black;
+}
+
+.text {
+  resize: none;
+  width: 480px;
+  height: 120px;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+input:checked {
+  background-color: aqua;
 }

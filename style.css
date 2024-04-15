@@ -109,3 +109,65 @@ body {
   top: 70px;
   left: 150px;
 }
+
+.container {
+  width: 400px;
+  height: 400px;
+  /* Всі дитячі елементи позиціонуються відносно батьківських в тому випадку якщо у батьківького леементу будь який позішн окремий від статік */
+  position: relative;
+}
+/* Поява */
+.container:hover .list {
+  /* z-index: 2; */
+  padding: 27px 107px;
+  opacity: 1;
+  pointer-events: all;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img {
+  /*  */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.list {
+  position: absolute;
+
+  /* z-index: -1; */
+
+  /* opacity - прозорість */
+  opacity: 0;
+  /* Блокує всі можливі івенти мишки */
+  pointer-events: none;
+
+  /* Щоб центрувати спозиціонований елемент нат треба дві властивості   top: 50%;
+  left: 50%;  transform: translate(-50%, -50%);*/
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  font-size: 40px;
+  color: red;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* overflow - переповнення */
+
+.p {
+  width: 200px;
+  height: 200px;
+  /* overflow за замовчуванням visible */
+  overflow: hidden;
+}

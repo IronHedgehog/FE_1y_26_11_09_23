@@ -13,52 +13,39 @@ ol {
 a {
   text-decoration: none;
 }
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  transition: opacity 1s ease-in-out;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
+/* OVERFLOW */
+.img-thumb {
+  width: 500px;
+  height: auto;
+  border: 2px solid green;
+  border-radius: 20px;
   overflow: hidden;
 }
 
-.modal {
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* OVERLAY */
+
+.box {
+  position: relative;
+  width: 370px;
+}
+
+.overlay {
   position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-
-  width: 528px;
-  height: 561px;
-  background-color: black;
-}
-
-.text {
-  resize: none;
-  width: 480px;
-  height: 120px;
-}
-
-button:disabled {
-  background-color: red;
-}
-
-input:checked {
-  background-color: aqua;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 139, 138, 0.8),
+    rgba(229, 207, 130, 0.8) 100%
+  );
+  /* 100% - ширини батьківського елементу */
+  width: 100%;
+  /* 100% - висоти батьківського елементу */
+  height: auto;
 }

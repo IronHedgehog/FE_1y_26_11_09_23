@@ -17,110 +17,47 @@ a {
 html {
   scroll-behavior: smooth;
 }
-/* OVERFLOW */
-.img-thumb {
-  width: 500px;
-  height: auto;
-  border: 2px solid green;
-  border-radius: 20px;
-  overflow: hidden;
+
+.div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  /* transform - якщо ви хочете провести якусь трансформацію, якусь дію над елемпентом ви маєте почати з трансформу */
+  /* Дуже багато може бути комбінацій але,що найкращий варіант зазвичай найпростіший */
+  /* ПОЧАТКОВІ ЗНАЧЕННЯ, ЗНАЧЕННЯ ЗА ЗАМОВЧУВАННЯМ */
+  /* transform: rotate(0deg) translateY(0%) skew(0deg, 0deg) scale(1); */
+
+  /* основна властивість БЕЗ ЯКОЇ CSS перехід НЕМОЖЛИВИЙ */
+  /* transition-property: transform; */
+
+  /* transition-duration: - тривалість анімації (вказується в ms або в s) Обовʼязкова*/
+  /* transition-duration: 350ms; */
+  /* transition-timing-function: linear; */
+
+  /*120deg - deg = градуси  
+  rotate - перегортання елементу
+  */
+  /* rotate: 360deg;
+  scale: ; */
 }
 
-.img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+.div:hover {
+  /* rotate - дозволяє крутити елементи навколо своєї осі */
+  /* scale -  дозволяє нам збільшувати та зменшувати елементи (значення за замовчуванням 1)
+  за допомогою значення 0, приховує елементи
+  дозволяє збільшити елемент в стільки разів у скільки ви вкажете в дужках
+  */
 
-.sec {
-  height: 1000px;
-}
-/* OVERLAY */
+  /*друге число регулює висоту на яку має зміститись елемент  */
+  /*друге число регулює ширину на яку має зміститись елемент  */
+  /* % - відносні величини які в данному випадку вираховуються залежно від розміру анімованого елементу */
 
-.box {
-  position: relative;
-  width: 380px;
-  overflow: hidden;
-}
+  /* skew - він дозволяє нам деформувати кути, збільшувати та зменшувати сторони елементу за бажанням */
+  transform: skew(35deg, 20deg);
 
-.overlay {
-  position: absolute;
+  transition-property: transform;
 
-  z-index: 1;
-
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(239, 139, 138, 0.8),
-    rgba(229, 207, 130, 0.8) 100%
-  );
-  /* 100% - ширини батьківського елементу */
-  width: 100%;
-  /* 100% - висоти батьківського елементу */
-  height: 100%;
-
-  transform: translateX(100%);
-
-  /* opacity: 0; */
-}
-
-.img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.box:hover .overlay {
-  transform: translateX(0%);
-  /* opacity: 1; */
-}
-/* LINE */
-
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.list-item {
-  overflow: hidden;
-}
-
-.list-link {
-  display: block;
-  color: rgb(149, 225, 211);
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0%;
-}
-
-/* after - псевдоелемент - використовується для декорацій */
-.list-link::after {
-  content: "";
-
-  transform: translateX(100%);
-  display: block;
-
-  width: 100%;
-  height: 2px;
-
-  margin-top: 28px;
-
-  background-color: blue;
-}
-
-.active {
-  color: blue;
-  /* padding-bottom: 20px;
-  border-bottom: 0px solid blue; */
-}
-.list-link:hover::after {
-  transform: translateX(0%);
+  /* transition-duration: - тривалість анімації (вказується в ms або в s) Обовʼязкова*/
+  transition-duration: 350ms;
+  transition-timing-function: linear;
 }

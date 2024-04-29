@@ -105,7 +105,7 @@ ul {
 .list-link::after {
   content: "";
 
-  transform: translateX(100%);
+  transform: translateX(-100%);
   display: block;
 
   width: 100%;
@@ -114,6 +114,10 @@ ul {
   margin-top: 28px;
 
   background-color: blue;
+  /* transition - сss перехід */
+  /* 1 - властивість для анімації */
+  /* 2 - скільки буде тривати анімація */
+  transition: transform 250ms;
 }
 
 .active {

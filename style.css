@@ -17,121 +17,54 @@ a {
 html {
   scroll-behavior: smooth;
 }
-/* OVERFLOW */
-.img-thumb {
-  width: 500px;
-  height: auto;
-  border: 2px solid green;
-  border-radius: 20px;
-  overflow: hidden;
+
+header {
+  padding-top: 71px;
+  padding-bottom: 92px;
 }
 
-.img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.sec {
-  height: 1000px;
-}
-/* OVERLAY */
-
-.box {
-  position: relative;
-  width: 380px;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-
-  z-index: 1;
-
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(239, 139, 138, 0.8),
-    rgba(229, 207, 130, 0.8) 100%
-  );
-  /* 100% - ширини батьківського елементу */
-  width: 100%;
-  /* 100% - висоти батьківського елементу */
-  height: 100%;
-
-  transform: translateX(100%);
-
-  /* opacity: 0; */
-}
-
-.img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.box:hover .overlay {
-  transform: translateX(0%);
-  /* opacity: 1; */
-}
-/* LINE */
-
-ul {
+.list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 100px;
 }
-
-.list-item {
-  overflow: hidden;
-}
-
 .list-link {
-  display: block;
-  color: rgb(149, 225, 211);
-  font-family: Montserrat;
-  font-size: 14px;
+  font-family: "Playfair Display";
+  font-style: normal;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0%;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #7d7d7d;
+
+  transition: color 0.5s;
 }
 
-/* after - псевдоелемент - використовується для декорацій */
-.list-link::after {
-  content: "";
-
-  transform: translateX(-100%);
-  display: block;
-
-  width: 100%;
-  height: 2px;
-
-  margin-top: 28px;
-
-  background-color: blue;
-  /* transition - сss перехід */
-  /* 1 - властивість для анімації */
-  /* 2 - скільки буде тривати анімація */
-  /* transition: transform 250ms; */
-  /* transition: color 500ms, cubic-bezier(0.83, -0.08, 0.32, 1), 1000ms; */
-
-  /* transition: color 500ms, transition: cubic-bezier(0.83, -0.08, 0.32, 1) */
-
-  transition-timing-function: ease;
-
-  transition: color 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 1000ms;
+.list-link:hover {
+  color: #03a9f4;
 }
 
-.active {
-  color: blue;
-  /* padding-bottom: 20px;
-  border-bottom: 0px solid blue; */
+.footer {
+  display: flex;
+  justify-content: center;
 }
-.list-link:hover::after {
-  transform: translateX(0%);
+
+.footer-button {
+  width: 165px;
+  height: 60px;
+  color: #626262;
+  /* rgba(0,0,0,0) = transparent (прозорий) */
+  background-color: transparent;
+  transition: background-color 0.5s, color 0.5s;
+  border: 2px solid #626262;
+}
+
+.footer-button:hover {
+  cursor: pointer;
+  background-color: #03a9f4;
+  color: white;
 }

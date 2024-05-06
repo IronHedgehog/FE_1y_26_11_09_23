@@ -68,3 +68,42 @@ header {
   background-color: #03a9f4;
   color: white;
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* transition: opacity 0.5s; */
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.overlay.is-hidden {
+  opacity: 0;
+  z-index: -9999;
+}

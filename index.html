@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <button data-modal-open>open modal</button>
+    <button class="button" data-modal-open>open modal</button>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vero quis
       totam consequatur voluptatum, aliquam soluta voluptate nostrum tempora
@@ -210,6 +215,14 @@
       pariatur cum! Corporis, amet doloribus. Asperiores perferendis possimus
       fuga blanditiis, et quibusdam veniam eos. Magnam voluptate, consequuntur
       porro minima cumque et repellendus nihil facilis, doloribus maiores,
+      <div class="div" data-aos="fade-left">
+      <img
+        class="img animate__animated animate__lightSpeedInRight"
+        src="./first-man 1.png"
+        alt=""
+      />
+      </div>
+
       expedita sit deserunt odio rerum. Id ea delectus nam tenetur, aut voluptas
       dignissimos at adipisci, totam magni animi vitae, non repellat beatae! Eum
       numquam earum enim praesentium perferendis quidem hic iste reiciendis
@@ -251,5 +264,9 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

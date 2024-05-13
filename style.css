@@ -18,92 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  padding-top: 71px;
-  padding-bottom: 92px;
-}
-
 .list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  /*flex-wrap: - відповідає за перенос на настуний рядок за замовчуванням вимкнений  */
+  flex-wrap: wrap;
 }
-
-.list-item:not(:last-child) {
-  margin-right: 100px;
-}
-.list-link {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  /* identical to box height */
-
-  color: #7d7d7d;
-
-  transition: color 0.5s;
-}
-
-.list-link:hover {
-  color: #03a9f4;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-button {
-  width: 165px;
-  height: 60px;
-  color: #626262;
-  /* rgba(0,0,0,0) = transparent (прозорий) */
-  background-color: transparent;
-  transition: background-color 0.5s, color 0.5s;
-  border: 2px solid #626262;
-}
-
-.footer-button:hover {
-  cursor: pointer;
-  background-color: #03a9f4;
-  color: white;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* transition: opacity 0.5s; */
-  animation: move 2s infinite alternate;
-}
-
-@keyframes move {
-  from {
-    left: 0;
-  }
-  to {
-    left: 200px;
-  }
-}
-
-.modal {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: white;
-  transform: translate(-50%, -50%);
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
-.overlay.is-hidden {
-  opacity: 0;
-  z-index: -9999;
+li {
+  border: 1px solid red;
 }

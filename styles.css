@@ -873,9 +873,9 @@ margin-right: 30px;
   cursor: pointer;
   transition: fill 250ms linear, cursor 250ms linear;
 }
-.modal-close:hover{
+.modal-close:hover {
   fill: var(--accent);
-  cursor: pointer
+  cursor: pointer;
 }
 .icon-close {
   position: absolute;
@@ -884,7 +884,6 @@ margin-right: 30px;
   width: 18px;
   height: 18px;
 }
-
 
 /* ====================== FORM ============================= */
 

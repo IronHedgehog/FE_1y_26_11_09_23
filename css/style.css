@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* box-sizing -  завжди має мати значення border-box */
+  /* box-sizing - box - коробка ;size -розмір - корегуе поведінку елементів на сторінці та контролює те як вимірюється відступи внутрішні та розміри елемента */
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 80px;
+  /* background-color: green; */
+}
+
+.header-logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #95e1d3;
+  margin-right: 630px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 55px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #95e1d3;
+}
+
+.nav-link:hover {
+  color: #f38181;
+}
+
+.our-team {
+  padding-bottom: 80px;
+}
+
+.team-topHeading {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  /* identical to box height */
+  color: #333333;
+}
+
+.team-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  /* identical to box height */
+  font-variant: all-small-caps;
+  color: #333333;
+}
+
+.team-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #b6b6b6;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  font-variant: all-small-caps;
+  color: #333333;
+}
+
+.team-prof {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  color: #b6b6b6;
+}
+
+.footer-copyright {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #333333;
+}
+
+.footer-copyright--link {
+  color: #f38181;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-input {
+  display: block;
+  border: 2px solid grey;
+  outline: none;
+  border-right: none;
+  width: 230px;
+  height: 40;
+}
+
+.footer-button {
+  width: 150px;
+  height: 40px;
+  background: #95e1d3;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  font-variant: all-small-caps;
+  color: #ffffff;
+}

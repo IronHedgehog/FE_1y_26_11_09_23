@@ -1,0 +1,46 @@
+.footer-copyright {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #333333;
+}
+
+.footer-copyright--link {
+  color: #f38181;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-input {
+  display: block;
+  border: 2px solid grey;
+  outline: none;
+  border-right: none;
+  width: 230px;
+  height: 40;
+}
+
+.footer-button {
+  width: 150px;
+  height: 40px;
+
+  background: #95e1d3;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  font-variant: all-small-caps;
+
+  color: #ffffff;
+}

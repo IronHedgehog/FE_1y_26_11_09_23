@@ -72,6 +72,12 @@ a {
 
 .nav-item {
   color: red;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-item:hover .nav-link::after {
+  transform: translateX(0);
 }
 
 .nav-link {
@@ -82,6 +88,18 @@ a {
   line-height: 17px;
   /* identical to box height */
   color: #2600ff;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transform: translateX(100%);
+  transition: transform 300ms linear;
 }
 
 .nav-link:hover {

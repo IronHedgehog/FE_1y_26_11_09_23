@@ -1,0 +1,17 @@
+.button1 {
+  // @extend - дозволяє скопіювати вже існуючий код або розширити
+  //@extend .button - Скопіюй на своє місце всі стилі класу button
+  //Розшир клас button1 за допомогою селектору класу з назвою button
+  @extend %button;
+  background-color: green;
+}
+
+.button2 {
+  @extend %button;
+  background-color: aqua;
+}
+
+.button4 {
+  @extend %button;
+  background-color: firebrick;
+}

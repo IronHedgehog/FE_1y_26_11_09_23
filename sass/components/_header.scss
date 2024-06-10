@@ -22,12 +22,19 @@
 }
 
 .nav-list {
+  // @extend %flexCenter;
   display: flex;
   justify-content: center;
+  align-items: center;
+  @include flex(flex, center, center);
 }
 
 .nav-item:not(:first-child) {
   margin-left: 55px;
+}
+
+.nav-item {
+  color: red;
 }
 
 .nav-link {
@@ -38,7 +45,7 @@
   line-height: 17px;
   /* identical to box height */
 
-  color: #95e1d3;
+  color: #2600ff;
 }
 
 .nav-link:hover {

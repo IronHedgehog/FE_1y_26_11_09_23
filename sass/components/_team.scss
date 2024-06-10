@@ -11,7 +11,17 @@
   text-align: center;
   /* identical to box height */
 
-  color: #333333;
+  color: $main-text-color;
+}
+
+.team-topHeading::before {
+  content: $game1;
+
+  // display: block;
+
+  // width: 100px;
+  // height: 100px;
+  // background-color: red;
 }
 
 .team-heading {
@@ -24,7 +34,7 @@
   /* identical to box height */
   font-variant: all-small-caps;
 
-  color: #333333;
+  color: $main-text-color;
 }
 .team-text {
   font-family: 'Roboto';
@@ -34,7 +44,7 @@
   line-height: 18px;
   text-align: center;
 
-  color: #b6b6b6;
+  color: $main-text-color;
 }
 
 .team-list {
@@ -53,7 +63,7 @@
   text-align: center;
   font-variant: all-small-caps;
 
-  color: #333333;
+  color: $main-text-color;
 }
 
 .team-prof {
@@ -65,5 +75,5 @@
   /* identical to box height */
   text-align: center;
 
-  color: #b6b6b6;
+  color: $main-text-color;
 }

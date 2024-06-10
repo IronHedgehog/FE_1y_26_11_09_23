@@ -1,0 +1,15 @@
+// @mixin - mix-домішати in - в середину (домішки)
+//
+
+//Дозволяють використовувати себе будь-де у коді для того щоб ми могли завжди змінювати властивості які нам необхідно
+
+@mixin buttonSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

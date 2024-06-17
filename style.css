@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.blue {
+  /* НАПИСАНО ДЛЯ ТЕЛЕФОННОЇ ВЕРСІЇ */
+
+  /* px - це абсолютна величина яка незалежна не від чого */
+  /* viewport - область перегляду */
+  /* v - viewport */
+  /* h,w - height, width */
+  /* vh - viewportHeight(висота області перегляду) vw  - viewportWidth(ширина області перегляду) */
+  background-color: blue;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* screen - це перевірка на кольоровий екран */
+/* print - це перевірка на чи хочуть роздрукувати */
+/* all - ліпить всюди */
+
+/* @media - оголошення медіа правила  */
+/* screen - це перевірка на кольоровий екран */
+/* and - И */
+/* (min-width: 768px) - мінімальна ширина пристрою була 768px */
+
+@media screen and (min-width: 768px) {
+  .blue {
+    width: 80vw;
+  }
+}
+
+.yellow {
+  background-color: yellow;
+  width: 50vw;
+  height: 50vh;
+}
+@media (min-width: 768px) {
+  .yellow {
+    width: 80vw;
+  }
+}

@@ -7,41 +7,37 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Семантика - це про правильно та змыстовне застосування тегів -->
+    <header class="header">
+      <a class="logo" href=""><img src="./img/logo 1.png" alt="" /></a>
+      <nav class="header-nav">
+        <ul class="list">
+          <li class="list-item"><a href="" class="list-link">asd</a></li>
+          <li class="list-item"><a href="" class="list-link">qwe</a></li>
+          <li class="list-item"><a href="" class="list-link">zxc</a></li>
+        </ul>
+      </nav>
+      <button class="menu-button mob-menu__button--open">
+        <svg class="menu-icon">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
 
-    <main>
-      <section class="adventure">
-        <h2 class="visually-hidden">Adventure</h2>
-        <!-- container - необхідний для того щоб ми могли центрувати та утримувати наш контент на певній ширині. -->
-        <div class="container">
-          <ul class="adventure-list">
-            <li class="adventure-item antena">
-              <h3 class="adventure-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="adventure-describe">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="adventure-item clock">
-              <h3 class="adventure-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="adventure-describe">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="adventure-item diagram">
-              <h3 class="adventure-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="adventure-describe">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="adventure-item astronaut">
-              <h3 class="adventure-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="adventure-describe">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
+      <div class="mobile-menu is-hidden mob-menu">
+        <button class="close-button mob-menu__button--close">
+          <svg class="icon-close">
+            <use href="./img/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <nav class="header-nav mobile-nav">
+          <ul class="mobile-list">
+            <li class="list-item"><a href="" class="list-link">asd</a></li>
+            <li class="list-item"><a href="" class="list-link">qwe</a></li>
+            <li class="list-item"><a href="" class="list-link">zxc</a></li>
           </ul>
-        </div>
-      </section>
-    </main>
+        </nav>
+      </div>
+    </header>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

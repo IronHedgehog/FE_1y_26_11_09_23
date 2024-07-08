@@ -3,41 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <a class="logo" href=""><img src="./img/logo 1.png" alt="" /></a>
-      <nav class="header-nav">
-        <ul class="list">
-          <li class="list-item"><a href="" class="list-link">asd</a></li>
-          <li class="list-item"><a href="" class="list-link">qwe</a></li>
-          <li class="list-item"><a href="" class="list-link">zxc</a></li>
+    <section class="weather-cards">
+      <div class="container">
+        <ul class="card-list">
+          <li class="card-item">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./img/img.webp 1x, ./img/img@2x.webp 2x, ./img/img@3x.webp 3x"
+                media="(min-width:1200px)"
+              />
+              <!-- tablet -->
+              <source
+                srcset="
+                  ./img/img-tablet.webp    1x,
+                  ./img/img@2x-tablet.webp 2x,
+                  ./img/img@3x-tablet.webp 3x
+                "
+                media="(min-width:768px)"
+              />
+              <!-- phone -->
+              <source
+                srcset="
+                  ./img/img-mobile.jpg    1x,
+                  ./img/img@2x-mobile.jpg 2x,
+                  ./img/img@3x-mobile.jpg 3x
+                "
+                media="(min-width:0px)"
+              />
+              <img src="./img/img@3x-mobile.jpg" alt="" />
+            </picture>
+          </li>
         </ul>
-      </nav>
-      <button class="menu-button mob-menu__button--open">
-        <svg class="menu-icon">
-          <use href="./img/symbol-defs.svg#icon-menu"></use>
-        </svg>
-      </button>
-
-      <div class="mobile-menu is-hidden mob-menu">
-        <button class="close-button mob-menu__button--close">
-          <svg class="icon-close">
-            <use href="./img/symbol-defs.svg#icon-cross"></use>
-          </svg>
-        </button>
-
-        <nav class="header-nav mobile-nav">
-          <ul class="mobile-list">
-            <li class="list-item"><a href="" class="list-link">asd</a></li>
-            <li class="list-item"><a href="" class="list-link">qwe</a></li>
-            <li class="list-item"><a href="" class="list-link">zxc</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <script src="./js/mobile-menu.js" type="module"></script>
+    </section>
+    <!-- <img src="./img/img@3x.webp" alt="1x" /> -->
   </body>
 </html>

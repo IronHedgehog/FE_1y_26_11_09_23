@@ -4,37 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Mobile menu</title>
+    <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href=""> Текстовий лого </a>
+        <a href="" class="logo">
+          <p class="text-logo">LOGO</p>
+        </a>
+
         <nav class="header-nav">
-          <ul class="list">
-            <li class="list-item"><a href="" class="list-link">qwe</a></li>
-            <li class="list-item"><a href="" class="list-link">asd</a></li>
-            <li class="list-item"><a href="" class="list-link">zxc</a></li>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="" class="nav-link">asd</a></li>
+            <li class="nav-item"><a href="" class="nav-link">qwe</a></li>
+            <li class="nav-item"><a href="" class="nav-link">zxc</a></li>
           </ul>
         </nav>
-        <button class="">Відкрити</button>
 
-        <div class="mobile-menu is-hidden">
-          <button class="close-mobile-button">X</button>
-          <nav class="header-nav">
-            <ul class="list">
-              <li class="list-item"><a href="" class="list-link">qwe</a></li>
-              <li class="list-item"><a href="" class="list-link">asd</a></li>
-              <li class="list-item"><a href="" class="list-link">zxc</a></li>
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="tel:3807685994" class="contacts-link">+3807685994</a>
+          </li>
+          <li class="contacts-item">
+            <a href="mailto:asd@gmail.com" class="contacts-link">asd@gmail.com</a>
+          </li>
+        </ul>
+
+        <button class="open-menu-button mob-menu__button--open">
+          <!-- <svg>
+            <use href=""></use>
+          </svg> -->
+          Відкрити мобільне меню
+        </button>
+
+        <div class="mobile-menu is-hidden mob-menu">
+          <button class="close-menu-button mob-menu__button--close">
+            <!-- <svg>
+            <use href=""></use>
+          </svg> -->
+            X
+          </button>
+
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li class="mobile-item"><a href="" class="nav-link">asd</a></li>
+              <li class="mobile-item"><a href="" class="nav-link">qwe</a></li>
+              <li class="mobile-item"><a href="" class="nav-link">zxc</a></li>
             </ul>
           </nav>
+
+          <ul class="contacts-mobile">
+            <li class="contacts-item">
+              <a href="tel:3807685994" class="contacts-link">+3807685994</a>
+            </li>
+            <li class="contacts-item">
+              <a href="mailto:asd@gmail.com" class="contacts-link">asd@gmail.com</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>

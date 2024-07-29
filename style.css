@@ -1,1 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .open-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 320px;
+  height: 100vh;
+
+  padding: 50px;
+
+  background-color: lightcoral;
+
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+/* is-hidden - прихований */
+.mobile-menu.is-hidden {
+  transform: translateX(100%);
+}

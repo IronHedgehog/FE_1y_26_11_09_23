@@ -1,259 +1,67 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <span>
-    <!-- шапка сайту -->
-    <header></header>
-    <!-- змінна основна частина сайту -->
+  <body>
+    <header class="header">
+      <a href="" class="logo">Brit<span class="logo-gray">lex</span></a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#section1" class="nav-link">Секція1</a></li>
+          <li class="nav-item"><a href="#section2" class="nav-link">Секція2</a></li>
+          <li class="nav-item"><a href="#section3" class="nav-link">Секція3</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <!-- Секція- виділяє за змістом якусь частину контенту -->
-      <section id="s">
-        <!-- універсальна коробка для усього на світі -->
-        <div>
-          <!-- маркований список(можуть вміщувати у собі лише тег <li></li>) -->
-
-          <ul>
-            <!-- елемент списку -->
-            <li>фдладлфділ</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+      <section id="section1">
+        <div class="container">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <img src="./img/img.jpg" alt="" class="advantage-img" />
+              <div class="text-container">
+                <h3 class="advantages-heading">The walkways of Indonesia spellbind</h3>
+                <p class="advantage-description">
+                  Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et
+                  libero mollis rhoncus.
+                </p>
+                <a href="" class="advantage-link">Learn More</a>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <img src="./img/img1.jpg" alt="" class="advantage-img" />
+              <div class="text-container">
+                <h3 class="advantages-heading">The walkways of Indonesia spellbind</h3>
+                <p class="advantage-description">
+                  Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et
+                  libero mollis rhoncus.
+                </p>
+                <a href="" class="advantage-link">Learn More</a>
+              </div>
+            </li>
           </ul>
-
-          <!-- нумерований список(можуть вміщувати у собі лише тег <li></li>) -->
-          <ol>
-            <li>
-              <p>Перевірити ДЗ</p>
-            </li>
-            <li>
-              <p>Погуляти</p>
-            </li>
-            <li>
-              <p>Зганяти в магазин</p>
-            </li>
-            <li>
-              <p>Попрацювати</p>
-              <img
-                src="https://vsepic.ru/uploads/posts/2021-08/foto-kartinki-vistachit-pracjuvati-16.jpg"
-                alt=""
-              />
-            </li>
-            <li>
-              <p>
-                Lorem10 Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Voluptates fugiat, itaque mollitia accusantium ut modi!
-              </p>
-            </li>
-          </ol>
         </div>
       </section>
-
-      <section id="f">
-        <div>
-          <!-- Стаття -->
-          <article>
-            <!-- Картинка -->
-            <img src="" alt="" />
-            <!-- Підзаголовок -->
-            <h2>Lorem.</h2>
-            <!-- Параграф -->
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-              similique, suscipit eius dolor fuga, debitis nemo animi dicta
-              illum quaerat, commodi laboriosam nesciunt aut omnis asperiores
-              fugit enim possimus ullam?
-            </p>
-            <!-- посилання -->
-            <a href=""></a>
-          </article>
+      <section id="section2">
+        <div class="container">
+          <h2>section2</h2>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="container">
+          <h2>section3</h2>
         </div>
       </section>
     </main>
-    <!-- підвал сайту -->
-    <footer>
-      <p>
-        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i> <br />
-        Maiores, ipsum dolores. <br />
-        Doloremque ad voluptatum nam vitae ipsam necessitatibus iste doloribus.
-      </p>
-      <br />
-
-      <address><b>вул.Сірка,буд.30,кв.10</b></address>
-
-      ul#id>li.class*3>a[href="./dz.html"]
-
-      <ul>
-        <li>
-          <a href="#s">1 секція</a>
-        </li>
-        <li>
-          <a href="#f">2 секція</a>
-        </li>
-        <li><a href="">3 секція</a></li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="tel:+4034030">подзвонити</a>
-        </li>
-        <li>
-          <a href="mailto:mail@gmail.com">Написати</a>
-        </li>
-        <li></li>
-      </ul>
-
-      <form>
-        <input type="text" placeholder="name" />
-        <input type="text" placeholder="E-mail" />
-        <select name="" id="">
-          <option>femail</option>
-          <option>mail</option>
-          <option>they</option>
-        </select>
-        <!-- <input type="checkbox" /> -->
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Text message"
-        ></textarea>
-
-        <button type="submit">Замовити</button>
-
-        <button type="reset">Скинути</button>
-      </form>
-
-      <!-- таблиця -->
-      <table>
-        <!-- заголовок -->
-        <capture> Графік </capture>
-        <!-- шапка таблиці -->
-        <thead>
-          <!-- tr- table row - рядок таблиці -->
-          <tr>
-            <!-- колонка таблиці -->
-            <th>Час</th>
-            <th>Задача</th>
-            <th>Час виконання</th>
-          </tr>
-        </thead>
-        <!-- tbody - table body - Тіло таблиці яке містить основну інформацію таблиці -->
-        <tbody>
-          <!-- tr = рядок -->
-          <tr>
-            <!-- th = стовпчик(колонка) -->
-            <th>8:30</th>
-            <th>Попити каву</th>
-            <th>5 хв</th>
-          </tr>
-          <tr>
-            <th>9:00</th>
-            <th>Бути на роботі</th>
-            <th>30хв</th>
-          </tr>
-        </tbody>
-        <tfooter>
-          <tr>
-            <th><input type="checkbox" /></th>
-            <th><input type="checkbox" /></th>
-            <th><input type="checkbox" /></th>
-          </tr>
-        </tfooter>
-      </table>
-
-      <!-- всередині src зберігається абсолютне посилання -->
-      <img
-        src="https://img.freepik.com/free-photo/a-picture-of-fireworks-with-a-road-in-the-background_1340-43363.jpg"
-        alt="космос"
-      />
-
-      <!-- Відносне посилання -->
-      <img src="./img (8).jpg" alt="" />
-
-      <!-- КНОПКА -->
-      <button type="">вхіх</button>
-
-      <img src="./img (8).jpg" alt="" /><img src="./img (8).jpg" alt="" /><img
-        src="./img (8).jpg"
-        alt=""
-      /><img src="./img (8).jpg" alt="" /><img src="./img (8).jpg" alt="" /><img
-        src="./img (8).jpg"
-        alt=""
-      /><img src="./img (8).jpg" alt="" /><img src="./img (8).jpg" alt="" /><img
-        src="./img (8).jpg"
-        alt=""
-      /><img src="./img (8).jpg" alt="" />
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-        exercitationem nesciunt optio! Corrupti praesentium numquam illum
-        quaerat magni impedit provident?
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-        exercitationem nesciunt optio! Corrupti praesentium numquam illum
-        quaerat magni impedit provident?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-        exercitationem nesciunt optio! Corrupti praesentium numquam illum
-        quaerat magni impedit provident?
-      </p>
-    </footer>
-
-    <!-- <p>Head це службовий тег для груповання службових тегів</p> -->
-
-    <!-- width - ширина -->
-    <!-- height - висота -->
-    1
-    <img width="250" height="200" alt="img" />
-    2
-    <img width="200" height="250" alt="img" />
-
-    <article></article>
-
-    <ul>
-      <li>Працює в браузері</li>
-      <li>Не грузить систему</li>
-    </ul>
-
-    <a href=""></a>
-
-    <dl>
-      <dt>Тег а</dt>
-      <dd>
-        Тег при натисканні на який ми відправляємо користувача на іншу сторінку
-      </dd>
-
-      <dt>тег img</dt>
-      <dd>тег який додає картинку</dd>
-    </dl>
-
-    <figure>
-      <img src="./0_7c779_5df17311_orig.jpg" width="250" height="200" alt="" />
-
-      <figcaption>пляж</figcaption>
-    </figure>
-
-
-
-    <ul>
-      <li></li>
-    </ul>
-
-
-      <p>asdljaldjal<span>sjd </span></p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, velit.
-    </p>
-    <span>alknkanasndanskdnalksdwokqw</span>
   </body>
 </html>
